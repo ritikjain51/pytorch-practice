@@ -1,0 +1,5 @@
+2021-08-16 16:31:56,767 - /127.0.0.1:53673 "POST /predictions/resnet34_image_classifier/1.0 HTTP/1.1" 200 3463
+2021-08-16 16:34:41,170 - /127.0.0.1:49497 "POST /predictions/resnet34_image_classifier/1.0 HTTP/1.1" 503 4051
+2021-08-16 16:39:13,029 - /127.0.0.1:58753 "POST /predictions/resnet34_image_classifier/1.0 HTTP/1.1" 200 7226
+2021-08-16 16:39:43,076 - /127.0.0.1:58754 "POST /predictions/resnet34_image_classifier/1.0 HTTP/1.1" 200 805
+2021-08-16 16:39:54,888 - /127.0.0.1:58755 "POST /predictions/resnet34_image_classifier/1.0 HTTP/1.1" 200 608

@@ -1,0 +1,45 @@
+2021-08-16 16:31:38,169 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Listening on port: None
+2021-08-16 16:31:38,171 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - [PID]3188
+2021-08-16 16:31:38,176 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Torch worker started.
+2021-08-16 16:31:38,184 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2021-08-16 16:31:38,255 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2021-08-16 16:31:38,377 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - model_name: resnet34_image_classifier, batchSize: 1
+2021-08-16 16:31:41,480 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Model Directory: C:\Users\ritik\AppData\Local\Temp\models\285799cd7dcd4e1896547391d0a3eefe
+2021-08-16 16:31:41,561 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Device: cuda:0
+2021-08-16 16:31:41,562 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Model Path: C:\Users\ritik\AppData\Local\Temp\models\285799cd7dcd4e1896547391d0a3eefe\jit_model.pt
+2021-08-16 16:31:56,759 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - result=tensor([[0., 0., 0., 0., 1., 0.]], device='cuda:0', grad_fn=<SoftmaxBackward>)
+2021-08-16 16:34:10,354 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Frontend disconnected.
+2021-08-16 16:34:10,354 [WARN ] W-9000-resnet34_image_classifier_1.0-stderr MODEL_LOG - C:\Users\ritik\AppData\Local\Temp\models\285799cd7dcd4e1896547391d0a3eefe\serve.py:95: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+2021-08-16 16:34:31,856 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Listening on port: None
+2021-08-16 16:34:31,857 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - [PID]4920
+2021-08-16 16:34:31,862 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Torch worker started.
+2021-08-16 16:34:31,864 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2021-08-16 16:34:31,935 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2021-08-16 16:34:32,040 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - model_name: resnet34_image_classifier, batchSize: 1
+2021-08-16 16:34:34,566 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Model Directory: C:\Users\ritik\AppData\Local\Temp\models\7032c90d95b546be8764b1abbad7c86a
+2021-08-16 16:34:34,637 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Device: cuda:0
+2021-08-16 16:34:34,638 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Model Path: C:\Users\ritik\AppData\Local\Temp\models\7032c90d95b546be8764b1abbad7c86a\jit_model.pt
+2021-08-16 16:34:41,145 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - result=tensor([[0., 0., 0., 0., 1., 0.]], device='cuda:0', grad_fn=<SoftmaxBackward>)
+2021-08-16 16:34:41,146 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Preprocessing Error: 'list' object has no attribute 'tolist'
+2021-08-16 16:34:41,148 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - 'list' object has no attribute 'tolist'
+2021-08-16 16:34:41,157 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2021-08-16 16:34:41,158 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG -   File "C:\Users\ritik\AppData\Local\Temp\models\7032c90d95b546be8764b1abbad7c86a\serve.py", line 67, in postprocess
+2021-08-16 16:34:41,159 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG -     probs = classes.tolist()
+2021-08-16 16:34:41,160 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - AttributeError: 'list' object has no attribute 'tolist'
+2021-08-16 16:34:41,161 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - model: resnet34_image_classifier, Invalid return type: <class 'NoneType'>.
+2021-08-16 16:35:15,747 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Frontend disconnected.
+2021-08-16 16:35:15,748 [WARN ] W-9000-resnet34_image_classifier_1.0-stderr MODEL_LOG - C:\Users\ritik\AppData\Local\Temp\models\7032c90d95b546be8764b1abbad7c86a\serve.py:95: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+2021-08-16 16:39:04,613 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Listening on port: None
+2021-08-16 16:39:04,614 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - [PID]20136
+2021-08-16 16:39:04,616 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Torch worker started.
+2021-08-16 16:39:04,623 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2021-08-16 16:39:04,662 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2021-08-16 16:39:04,733 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - model_name: resnet34_image_classifier, batchSize: 1
+2021-08-16 16:39:06,660 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Model Directory: C:\Users\ritik\AppData\Local\Temp\models\d0c647991a0041049dba19499ad6b301
+2021-08-16 16:39:06,697 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Device: cuda:0
+2021-08-16 16:39:06,698 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Model Path: C:\Users\ritik\AppData\Local\Temp\models\d0c647991a0041049dba19499ad6b301\jit_model.pt
+2021-08-16 16:39:13,015 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - result=tensor([[0., 0., 0., 0., 1., 0.]], device='cuda:0', grad_fn=<SoftmaxBackward>)
+2021-08-16 16:39:43,074 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - result=tensor([[0., 0., 0., 0., 1., 0.]], device='cuda:0', grad_fn=<SoftmaxBackward>)
+2021-08-16 16:39:54,885 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - result=tensor([[0., 0., 0., 0., 1., 0.]], device='cuda:0', grad_fn=<SoftmaxBackward>)
+2021-08-16 16:40:10,503 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout MODEL_LOG - Frontend disconnected.
+2021-08-16 16:40:10,503 [WARN ] W-9000-resnet34_image_classifier_1.0-stderr MODEL_LOG - C:\Users\ritik\AppData\Local\Temp\models\d0c647991a0041049dba19499ad6b301\serve.py:100: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)

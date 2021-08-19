@@ -1,0 +1,303 @@
+2021-08-16 16:31:29,594 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-08-16 16:31:29,813 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-08-16 16:31:30,627 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\ritik\miniconda3\envs\gpu\Lib\site-packages
+Current directory: D:\pytorch_codepractice\intel_image_classification
+Temp directory: C:\Users\ritik\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4070 M
+Python executable: c:\users\ritik\miniconda3\envs\gpu\python.exe
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: D:\pytorch_codepractice\intel_image_classification
+Initial Models: resnet34_image_classifier=resnet34_image_classifier.mar
+Log dir: D:\pytorch_codepractice\intel_image_classification\logs
+Metrics dir: D:\pytorch_codepractice\intel_image_classification\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: D:\pytorch_codepractice\intel_image_classification
+Model config: N/A
+2021-08-16 16:31:30,646 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: resnet34_image_classifier.mar
+2021-08-16 16:31:34,957 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model resnet34_image_classifier
+2021-08-16 16:31:34,958 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model resnet34_image_classifier
+2021-08-16 16:31:34,960 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model resnet34_image_classifier loaded.
+2021-08-16 16:31:34,961 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: resnet34_image_classifier, count: 1
+2021-08-16 16:31:35,021 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2021-08-16 16:31:35,536 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-08-16 16:31:35,536 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2021-08-16 16:31:35,546 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-08-16 16:31:35,547 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2021-08-16 16:31:35,554 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-08-16 16:31:36,187 [WARN ] pool-2-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2021-08-16 16:31:38,178 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change null -> WORKER_STARTED
+2021-08-16 16:31:38,201 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2021-08-16 16:31:45,893 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 7516
+2021-08-16 16:31:45,894 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 16:31:56,762 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 3362
+2021-08-16 16:31:56,774 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.job.Job - Waiting time ns: 263400, Backend time ns: 3375527500
+2021-08-16 16:34:08,132 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Inference model server stopped.
+2021-08-16 16:34:08,138 [INFO ] nioEventLoopGroup-2-2 org.pytorch.serve.ModelServer - Management model server stopped.
+2021-08-16 16:34:08,138 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Metrics model server stopped.
+2021-08-16 16:34:10,184 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2021-08-16 16:34:10,337 [INFO ] Thread-0 org.pytorch.serve.ModelServer - Unregistering model resnet34_image_classifier version 1.0
+2021-08-16 16:34:10,339 [DEBUG] Thread-0 org.pytorch.serve.wlm.ModelVersionedRefs - Removed model: resnet34_image_classifier version: 1.0
+2021-08-16 16:34:10,345 [DEBUG] Thread-0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_MODEL_LOADED -> WORKER_SCALED_DOWN
+2021-08-16 16:34:10,352 [WARN ] Thread-0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:34:10,353 [INFO ] nioEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_SCALED_DOWN
+2021-08-16 16:34:10,359 [WARN ] Thread-0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:34:10,362 [INFO ] W-9000-resnet34_image_classifier_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:34:10,373 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_SCALED_DOWN
+2021-08-16 16:34:10,394 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Shutting down the thread .. Scaling down.
+2021-08-16 16:34:10,403 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_SCALED_DOWN -> WORKER_STOPPED
+2021-08-16 16:34:10,410 [WARN ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:34:10,413 [WARN ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:34:10,423 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Worker terminated due to scale-down call.
+2021-08-16 16:34:10,786 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:34:10,979 [INFO ] Thread-0 org.pytorch.serve.wlm.ModelManager - Model resnet34_image_classifier unregistered.
+2021-08-16 16:34:22,053 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-08-16 16:34:22,552 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-08-16 16:34:23,042 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\ritik\miniconda3\envs\gpu\Lib\site-packages
+Current directory: D:\pytorch_codepractice\intel_image_classification
+Temp directory: C:\Users\ritik\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4070 M
+Python executable: c:\users\ritik\miniconda3\envs\gpu\python.exe
+Config file: logs\config\20210816163408149-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: D:\pytorch_codepractice\intel_image_classification
+Initial Models: resnet34_image_classifier=resnet34_image_classifier.mar
+Log dir: D:\pytorch_codepractice\intel_image_classification\logs
+Metrics dir: D:\pytorch_codepractice\intel_image_classification\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: D:\pytorch_codepractice\intel_image_classification
+Model config: N/A
+2021-08-16 16:34:23,061 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20210816163408149-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1629111848149,
+  "models": {
+    "resnet34_image_classifier": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "resnet34_image_classifier.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2021-08-16 16:34:23,088 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20210816163408149-shutdown.cfg
+2021-08-16 16:34:23,091 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20210816163408149-shutdown.cfg validated successfully
+2021-08-16 16:34:28,349 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model resnet34_image_classifier
+2021-08-16 16:34:28,350 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model resnet34_image_classifier
+2021-08-16 16:34:28,357 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model resnet34_image_classifier
+2021-08-16 16:34:28,367 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model resnet34_image_classifier loaded.
+2021-08-16 16:34:28,368 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: resnet34_image_classifier, count: 1
+2021-08-16 16:34:28,439 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2021-08-16 16:34:28,968 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-08-16 16:34:28,969 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2021-08-16 16:34:28,985 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-08-16 16:34:28,986 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2021-08-16 16:34:28,995 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-08-16 16:34:29,732 [WARN ] pool-2-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2021-08-16 16:34:31,864 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change null -> WORKER_STARTED
+2021-08-16 16:34:31,886 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2021-08-16 16:34:38,746 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 6706
+2021-08-16 16:34:38,748 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 16:34:41,147 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2386
+2021-08-16 16:34:41,178 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.job.Job - Waiting time ns: 1575791000, Inference time ns: 3994179700
+2021-08-16 16:35:13,461 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Inference model server stopped.
+2021-08-16 16:35:13,464 [INFO ] nioEventLoopGroup-2-2 org.pytorch.serve.ModelServer - Management model server stopped.
+2021-08-16 16:35:13,465 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Metrics model server stopped.
+2021-08-16 16:35:15,583 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2021-08-16 16:35:15,737 [INFO ] Thread-0 org.pytorch.serve.ModelServer - Unregistering model resnet34_image_classifier version 1.0
+2021-08-16 16:35:15,737 [DEBUG] Thread-0 org.pytorch.serve.wlm.ModelVersionedRefs - Removed model: resnet34_image_classifier version: 1.0
+2021-08-16 16:35:15,743 [DEBUG] Thread-0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_MODEL_LOADED -> WORKER_SCALED_DOWN
+2021-08-16 16:35:15,746 [WARN ] Thread-0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:35:15,747 [INFO ] nioEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_SCALED_DOWN
+2021-08-16 16:35:15,754 [WARN ] Thread-0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:35:15,757 [INFO ] W-9000-resnet34_image_classifier_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:35:15,770 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_SCALED_DOWN
+2021-08-16 16:35:15,787 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Shutting down the thread .. Scaling down.
+2021-08-16 16:35:15,792 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_SCALED_DOWN -> WORKER_STOPPED
+2021-08-16 16:35:15,795 [WARN ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:35:15,801 [WARN ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:35:15,813 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Worker terminated due to scale-down call.
+2021-08-16 16:35:16,001 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:35:16,039 [INFO ] Thread-0 org.pytorch.serve.wlm.ModelManager - Model resnet34_image_classifier unregistered.
+2021-08-16 16:38:55,760 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-08-16 16:38:56,083 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-08-16 16:38:56,836 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\ritik\miniconda3\envs\gpu\Lib\site-packages
+Current directory: D:\pytorch_codepractice\intel_image_classification
+Temp directory: C:\Users\ritik\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4070 M
+Python executable: c:\users\ritik\miniconda3\envs\gpu\python.exe
+Config file: logs\config\20210816163513475-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: D:\pytorch_codepractice\intel_image_classification
+Initial Models: resnet34_image_classifier=resnet34_image_classifier.mar
+Log dir: D:\pytorch_codepractice\intel_image_classification\logs
+Metrics dir: D:\pytorch_codepractice\intel_image_classification\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: D:\pytorch_codepractice\intel_image_classification
+Model config: N/A
+2021-08-16 16:38:56,852 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20210816163513475-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1629111913475,
+  "models": {
+    "resnet34_image_classifier": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "resnet34_image_classifier.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2021-08-16 16:38:56,875 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20210816163513475-shutdown.cfg
+2021-08-16 16:38:56,878 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20210816163513475-shutdown.cfg validated successfully
+2021-08-16 16:39:02,299 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model resnet34_image_classifier
+2021-08-16 16:39:02,300 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model resnet34_image_classifier
+2021-08-16 16:39:02,308 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model resnet34_image_classifier
+2021-08-16 16:39:02,309 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model resnet34_image_classifier loaded.
+2021-08-16 16:39:02,313 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: resnet34_image_classifier, count: 1
+2021-08-16 16:39:02,355 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2021-08-16 16:39:02,858 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-08-16 16:39:02,858 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2021-08-16 16:39:02,863 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-08-16 16:39:02,863 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2021-08-16 16:39:02,870 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-08-16 16:39:03,398 [WARN ] pool-2-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2021-08-16 16:39:04,617 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change null -> WORKER_STARTED
+2021-08-16 16:39:04,632 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2021-08-16 16:39:10,616 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 5883
+2021-08-16 16:39:10,617 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 16:39:13,017 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 2388
+2021-08-16 16:39:13,039 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.job.Job - Waiting time ns: 4758766300, Backend time ns: 2409754600
+2021-08-16 16:39:43,075 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 784
+2021-08-16 16:39:43,087 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.job.Job - Waiting time ns: 128700, Backend time ns: 797654300
+2021-08-16 16:39:54,885 [INFO ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 587
+2021-08-16 16:39:54,899 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.job.Job - Waiting time ns: 109400, Backend time ns: 601548400
+2021-08-16 16:40:08,188 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Inference model server stopped.
+2021-08-16 16:40:08,189 [INFO ] nioEventLoopGroup-2-2 org.pytorch.serve.ModelServer - Management model server stopped.
+2021-08-16 16:40:08,191 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Metrics model server stopped.
+2021-08-16 16:40:10,326 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2021-08-16 16:40:10,488 [INFO ] Thread-0 org.pytorch.serve.ModelServer - Unregistering model resnet34_image_classifier version 1.0
+2021-08-16 16:40:10,488 [DEBUG] Thread-0 org.pytorch.serve.wlm.ModelVersionedRefs - Removed model: resnet34_image_classifier version: 1.0
+2021-08-16 16:40:10,495 [DEBUG] Thread-0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_MODEL_LOADED -> WORKER_SCALED_DOWN
+2021-08-16 16:40:10,502 [WARN ] Thread-0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:40:10,502 [INFO ] nioEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_SCALED_DOWN
+2021-08-16 16:40:10,504 [WARN ] Thread-0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:40:10,526 [INFO ] W-9000-resnet34_image_classifier_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:40:10,527 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_SCALED_DOWN
+2021-08-16 16:40:10,545 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Shutting down the thread .. Scaling down.
+2021-08-16 16:40:10,552 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-resnet34_image_classifier_1.0 State change WORKER_SCALED_DOWN -> WORKER_STOPPED
+2021-08-16 16:40:10,562 [WARN ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stderr
+2021-08-16 16:40:10,569 [WARN ] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:40:10,579 [DEBUG] W-9000-resnet34_image_classifier_1.0 org.pytorch.serve.wlm.WorkerThread - Worker terminated due to scale-down call.
+2021-08-16 16:40:10,918 [INFO ] W-9000-resnet34_image_classifier_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-resnet34_image_classifier_1.0-stdout
+2021-08-16 16:40:11,141 [INFO ] Thread-0 org.pytorch.serve.wlm.ModelManager - Model resnet34_image_classifier unregistered.
+2021-08-17 09:05:52,601 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-08-17 09:05:53,586 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-08-17 09:05:53,962 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\ritik\miniconda3\envs\gpu\Lib\site-packages
+Current directory: D:\pytorch_codepractice\intel_image_classification
+Temp directory: C:\Users\ritik\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4070 M
+Python executable: c:\users\ritik\miniconda3\envs\gpu\python.exe
+Config file: logs\config\20210816164008202-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: D:\pytorch_codepractice\intel_image_classification
+Initial Models: resnet34_image_classifier.mar
+Log dir: D:\pytorch_codepractice\intel_image_classification\logs
+Metrics dir: D:\pytorch_codepractice\intel_image_classification\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: D:\pytorch_codepractice\intel_image_classification
+Model config: N/A
+2021-08-17 09:05:53,972 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20210816164008202-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1629112208203,
+  "models": {
+    "resnet34_image_classifier": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "resnet34_image_classifier.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2021-08-17 09:05:53,996 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20210816164008202-shutdown.cfg
+2021-08-17 09:05:53,998 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20210816164008202-shutdown.cfg validated successfully

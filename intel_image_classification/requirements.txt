@@ -1,0 +1,10 @@
+numpy
+pillow
+captum
+torch==1.9.0
+ts==0.5.1
+joblib==1.0.1
+torchvision==0.10.0
+torchserve==0.4
+scikit-learn==0.24.2
+torch-model-archiver
